@@ -12,20 +12,6 @@
 * **Fraud risk dashboard chart**
 * **Transaction history viewer**
 
----
-
-##  Project Structure
-
-```
-SentinelFlow/
-│
-├── app.py                # Main Streamlit application
-├── analytics_det.ipynb   # Data analysis notebook
-├── templates/
-│   └── index.html        # Optional HTML template
-├── .gitignore
-└── README.md
-```
 
 ---
 
