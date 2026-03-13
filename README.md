@@ -1,6 +1,6 @@
-#  SentinelFlow – Transaction Risk Monitoring System
 
-A **Streamlit-based web application** that monitors financial transactions and evaluates their **risk level** using rule-based analysis.
+
+**SentinelFlow** is a machine learning–based transaction risk monitoring system designed to detect potentially fraudulent financial transactions. The system analyzes key transaction attributes such as transaction type, amount, and account balances to estimate the likelihood of fraud. A trained machine learning pipeline processes the input data and generates a risk score that classifies transactions into low, medium, or high risk. The predictions and transaction insights are presented through an interactive dashboard built using Streamlit, allowing users to monitor and analyze transaction risks in real time.
 
 ---
 
@@ -84,6 +84,12 @@ The system evaluates transaction risk based on:
 * Account balance changes
 * Transaction type
 * Transaction frequency
+These factors are used to calculate a risk score and classify transactions into:
 
+🟢 Low Risk
+
+🟡 Medium Risk
+
+🔴 High Risk
 
 
