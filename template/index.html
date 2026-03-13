@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fraud Detection</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#0f172a;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+input{
+padding:10px;
+margin:10px;
+width:200px;
+}
+
+button{
+padding:10px 20px;
+background:#ef4444;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+.result{
+margin-top:20px;
+padding:15px;
+border-radius:6px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>Credit Card Fraud Detection</h2>
+
+<form action="/predict" method="post">
+
+<input type="text" name="amount" placeholder="Transaction Amount" required>
+<br>
+
+<input type="text" name="time" placeholder="Transaction Time" required>
+<br>
+
+<button type="submit">Predict</button>
+
+</form>
+
+{% if prediction is defined %}
+
+<h3>Prediction : {{prediction}}</h3>
+
+<div class="result" style="background:{{color}}">
+{{message}}
+</div>
+
+{% endif %}
+
+</body>
+</html>
